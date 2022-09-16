@@ -240,18 +240,18 @@ a:nth-child(5):hover~.animation {
 
 @media (min-height: 500px){
   body{
-    height: 600px;
+    height: 1000px;
   }
 }
 
 @media (min-height: 900px){
   body{
-    height: 1000px;
+    height: 2000px;
   }
 }
 
 @media (min-height: 1500px){
   body{
-    height: 1600px;
+    height: 3000px;
   }
 }
