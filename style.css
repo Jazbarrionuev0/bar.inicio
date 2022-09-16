@@ -91,14 +91,16 @@ img {
 }
 
 */
+html{
+  scroll-behavior: smooth;
+}
 
 .body{
-  scroll-behavior: smooth;
   background: url(https://images.unsplash.com/photo-1540484668164-185993edca46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80) center center/cover no-repeat;
 }
 
 .imgCarousel{
-  width: 383px;
+  width: 333px;
   border: 1px solid rgb(34, 34, 34);
 }
 
@@ -114,8 +116,8 @@ img {
 }
 
 .mapa{
-  width: 392px;
-  height: 285px;
+  width: 333px;
+  height: 400px;
 
 }
 
@@ -206,4 +208,28 @@ a:nth-child(5):hover~.animation {
     width: 120px;
     left: 470px;
     background-color: #e67e22;
+}
+
+
+
+@media (min-width: 600px) {
+
+  .container {
+    max-width: 550px !important; 
+  }
+
+  .mapa{
+    width: 506px;
+  
+  }
+}
+
+@media (min-width: 900px){
+  .container {
+    max-width: 900px !important; 
+  }
+    .mapa{
+      width: 850px;
+    
+    }
 }
