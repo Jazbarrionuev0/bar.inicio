@@ -23,7 +23,7 @@
     <div class="col-xs-12 ">
         <div>
             <nav>
-                <a Target="_blank" href="https://api.whatsapp.com/send?phone=3413157248&text=Hola, quiero hacer una reserva!">Reserva</a>
+                <a href="#formulario">Reservas</a>
                 <a href="#mapa">Ubicación</a>
                 <a Target="_blank" href="https://area51bartematico.com/">Carta</a>
                 <div class="animation start-home"></div>
@@ -62,6 +62,48 @@
     <div class="div_map col-xs-12 container">
         <iframe class="mapa mx-auto d-block" id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.7552840609037!2d-60.64081478432703!3d-32.95746977976721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab05c3d93347%3A0x565e2f4e8f5d7d8d!2sAv.%20Pellegrini%20942%2C%20S2000BTW%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1663281561549!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+
+    <!-- Form -->
+    <div class="login-box" id="formulario">
+        <h2>Reservar</h2>
+        <form>
+          <div class="user-box">
+            <input type="text" class="nombre" placeholder="Escribe tu nombre">
+            <label>Nombre</label>
+          </div><br>
+
+          <div class="user-box"><br>
+            <label class="label_dia">Dia</label><br>
+            <select class="form-control dia" id="exampleFormControlSelect1">
+                <option>Jueves</option>
+                <option>Viernes</option>
+                <option>Sabado</option>
+                <option>Domingo</option>               
+              </select>
+          </div> <br>
+
+          <label for="exampleFormControlSelect1"><p class="p_diaDeReserva label_dia">Dia de la reserva</p></label>
+        <select class="form-control hora" id="exampleFormControlSelect1">
+          <option>21hs</option>
+          <option>21:30hs</option>
+          <option>22hs</option>
+          <option>22:30hs</option>
+          <option>23hs</option>
+          <option>23:30hs</option>
+          <option>00hs</option>
+        </select>
+
+        <a class="guardar">
+            <span ></span>
+            Guardar
+          </a>
+        
+        <a Target="_blank" id="wsp" class="wsp reservar ocultar" href="https://api.whatsapp.com/send?phone=3413157248&text=Hola, quiero hacer una reserva!">Reserva</a>
+
+
+         
+        </form>
+      </div>
     
     <script src="app.js"></script>
     
