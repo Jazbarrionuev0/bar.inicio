@@ -57,48 +57,47 @@
     <!-- Form -->
 
     
-    <div class="div_map col-xs-12 container">
+    <div class="div_map col-xs-12 row justify-content-center">
+      <div class="login-box" id="formulario">
+          <h2>Reservar</h2>
+          <form>
+            <div class="user-box">
+              <input type="text" class="nombre" placeholder="Escribe tu nombre">
+              <label>Nombre</label>
+            </div><br>
 
-    <div class="login-box" id="formulario">
-        <h2>Reservar</h2>
-        <form>
-          <div class="user-box">
-            <input type="text" class="nombre" placeholder="Escribe tu nombre">
-            <label>Nombre</label>
-          </div><br>
+            <div class="user-box"><br>
+              <label class="label_dia">Dia</label><br>
+              <select class="form-control dia" id="exampleFormControlSelect1">
+                  <option>Jueves</option>
+                  <option>Viernes</option>
+                  <option>Sabado</option>
+                  <option>Domingo</option>               
+                </select>
+            </div> <br>
 
-          <div class="user-box"><br>
-            <label class="label_dia">Dia</label><br>
-            <select class="form-control dia" id="exampleFormControlSelect1">
-                <option>Jueves</option>
-                <option>Viernes</option>
-                <option>Sabado</option>
-                <option>Domingo</option>               
-              </select>
-          </div> <br>
+            <label for="exampleFormControlSelect1"><p class="p_diaDeReserva label_dia">Dia de la reserva</p></label>
+          <select class="form-control hora" id="exampleFormControlSelect1">
+            <option>21hs</option>
+            <option>21:30hs</option>
+            <option>22hs</option>
+            <option>22:30hs</option>
+            <option>23hs</option>
+            <option>23:30hs</option>
+            <option>00hs</option>
+          </select>
 
-          <label for="exampleFormControlSelect1"><p class="p_diaDeReserva label_dia">Dia de la reserva</p></label>
-        <select class="form-control hora" id="exampleFormControlSelect1">
-          <option>21hs</option>
-          <option>21:30hs</option>
-          <option>22hs</option>
-          <option>22:30hs</option>
-          <option>23hs</option>
-          <option>23:30hs</option>
-          <option>00hs</option>
-        </select>
-
-        <a class="guardar">
-            <span ></span>
-            Guardar
-          </a>
-        
-        <a Target="_blank" id="wsp" class="wsp reservar ocultar" href="https://api.whatsapp.com/send?phone=3413157248&text=Hola, quiero hacer una reserva!">Reserva</a>
+          <a class="guardar">
+              <span ></span>
+              Guardar
+            </a>
+          
+          <a Target="_blank" id="wsp" class="wsp reservar ocultar" href="https://api.whatsapp.com/send?phone=3413157248&text=Hola, quiero hacer una reserva!">Reserva</a>
 
 
-         
-        </form>
-      </div>
+          
+          </form>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>  

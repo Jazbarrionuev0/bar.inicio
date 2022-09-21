@@ -23,7 +23,7 @@ body{
 /* MAP */
 
 .div_map{
-  margin-top: 10px;
+  margin: 15px;
 }
 
 .mapa{
@@ -174,11 +174,8 @@ a:nth-child(5):hover~.animation {
 
 .login-box {
   position: absolute;
-  top: 145%;
-  left: 50%;
   width: 350px;
   padding: 40px;
-  transform: translate(-50%, -50%);
   background: rgba(0,0,0,.5);
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0,0,0,.6);
