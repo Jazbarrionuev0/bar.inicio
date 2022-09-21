@@ -1,8 +1,3 @@
-const myCarouselElement = document.querySelector('.carousel')
-const carousel = new bootstrap.Carousel(myCarouselElement, {
-  interval: 5000,
-  wrap: false
-})
 
 let wsp = document.querySelector(".wsp");
 let nombre = document.querySelector(".nombre");
