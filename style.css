@@ -159,16 +159,22 @@ a:nth-child(5):hover~.animation {
     width: 850px;
     
   }
+
 }
 
 
+.carousel-inner {
+  height: 46vh;
 
+  height: 269px;
+
+}
 
 /*Form*/
 
 .login-box {
   position: absolute;
-  top: 125%;
+  top: 145%;
   left: 50%;
   width: 350px;
   padding: 40px;
