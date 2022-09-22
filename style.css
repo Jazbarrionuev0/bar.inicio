@@ -7,7 +7,7 @@ html{
 body{
   background: url(https://images.unsplash.com/photo-1540484668164-185993edca46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80) center center/cover no-repeat;
   margin-right: 15px !important;
-  height: 175vh;
+  height: 225vh;
 }
 
 .imgCarousel{
@@ -141,12 +141,18 @@ a:nth-child(5):hover~.animation {
 
   .container {
     max-width: 550px !important; 
+
+  }
+
+  .carrusel{
+    max-width: 567px !important;
+    width: 500px;
   }
 
   .mapa{
     width: 506px;
-  
   }
+
 }
 
 @media (min-width: 900px){
