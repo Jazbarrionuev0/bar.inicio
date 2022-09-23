@@ -5,14 +5,14 @@ html{
 }
 
 body{
-  background: url(https://images.unsplash.com/photo-1540484668164-185993edca46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80) center center/cover no-repeat;
+  background: url(https://images.unsplash.com/photo-1540484668164-185993edca46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80) center center/cover repeat; 
   margin-right: 15px !important;
-  height: 255vh;
 }
 
 .imgCarousel{
   width: 333px;
   border: 1px solid rgb(34, 34, 34);
+  height: 100vh;
 }
 
 /* ICONO */
@@ -28,8 +28,7 @@ body{
 
 .mapa{
   width: 333px;
-  height: 400px;
-
+  height: 100vh;
 }
 
 /* FORM */
@@ -165,14 +164,6 @@ a:nth-child(5):hover~.animation {
     width: 850px;
     
   }
-
-}
-
-
-.carousel-inner {
-  height: 46vh;
-
-  height: 269px;
 
 }
 
@@ -335,8 +326,8 @@ a:nth-child(5):hover~.animation {
 
 .label_dia{
   color: #03e9f4 !important;
+  font-size: 15px !important;
 }
-
 
 .ocultar{
   display: none !important;
@@ -344,4 +335,13 @@ a:nth-child(5):hover~.animation {
 
 .guardar{
   color: aliceblue !important;
+}
+
+.carousel {
+  position: relative;
+  height: 100vh;
+}
+
+.carousel-inner {
+  height: 100vh;
 }
