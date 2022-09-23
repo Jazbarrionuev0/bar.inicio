@@ -5,6 +5,12 @@ let dia = document.querySelector(".dia");
 let hora = document.querySelector(".hora");
 let guardar = document.querySelector(".guardar");
 
+let form = document.querySelector(".login-box");
+
+let carrusel = document.querySelector(".carousel-inner");
+
+let mapa = document.querySelector(".mapa");
+
 guardar.addEventListener("click",reservarEvento);
 
 function reservarEvento(){
@@ -14,5 +20,19 @@ function reservarEvento(){
     wsp.classList.remove("ocultar");
     guardar.classList.add("ocultar");
 }
+
+window.addEventListener("scroll", detectarPosibleCambio);
+
+function detectarPosibleCambio(){
+    mapa.classList.remove("antiwidth");
+    form.classList.remove("opacity0");
+}
+
+window.addEventListener("load", gatos);
+
+function gatos(){
+    carrusel.classList.remove("carousel-inner-mil")
+}
+
 
 
