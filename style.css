@@ -30,7 +30,6 @@ img{
 
 .div_map{
   margin: 15px;
-  padding: 10px;
 }
 
 .mapa{
@@ -182,7 +181,11 @@ a:nth-child(5):hover~.animation {
 
 
   .carrusel{
-    height: 56vh;
+    height: 55vh;
+  }
+
+  .carousel-inner{
+    height: 55vh;
   }
 
 }
