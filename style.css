@@ -178,11 +178,20 @@ a:nth-child(5):hover~.animation {
 
 }
 
-@media (max-width: 400px){
+@media (max-width: 390px){
 
 
   .carrusel{
-    height: 48vh;
+    height: 56vh;
+  }
+
+}
+
+@media (min-width: 500px){
+
+
+  .carrusel{
+    height: 81vh;
   }
 
 }
