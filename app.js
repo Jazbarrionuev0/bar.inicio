@@ -5,6 +5,12 @@ let dia = document.querySelector(".dia");
 let hora = document.querySelector(".hora");
 let guardar = document.querySelector(".guardar");
 
+let reserva_nav =  document.querySelector(".reserva_nav");
+reserva_nav.addEventListener("click",irAReservas);
+
+let mapa_nav =  document.querySelector(".mapa_nav");
+mapa_nav.addEventListener("click",irAMap);
+
 let form = document.querySelector(".login-box");
 
 let carrusel = document.querySelector(".carousel-inner");
@@ -24,6 +30,7 @@ function reservarEvento(){
 window.addEventListener("scroll", detectarPosibleCambio);
 
 function detectarPosibleCambio(){
+    if(window.visualViewport)
     mapa.classList.remove("antiwidth");
     form.classList.remove("opacity0");
 }
@@ -36,3 +43,10 @@ function gatos(){
 
 
 
+function irAReservas(){
+    window.scrollTo(0, 2000);
+}
+
+function irAMap(){
+    window.scrollTo(0, 500);
+}

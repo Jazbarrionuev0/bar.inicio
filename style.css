@@ -14,6 +14,10 @@ img{
   border-radius: 2px;
 }
 
+a{
+  color: #fff !important;
+}
+
 .imgCarousel{
   width: 333px;
   border: 1px solid rgb(34, 34, 34);
