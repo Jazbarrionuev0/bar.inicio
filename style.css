@@ -381,6 +381,10 @@ a:nth-child(5):hover~.animation {
   display: flex;
 }
 
+.active{
+  box-shadow: 14px 2px 20px -4px #75b9ff;
+}
+
 .carousel-inner {
   transition: margin-left 1s, opacity 1.15s;
   opacity: 100%;
@@ -399,8 +403,4 @@ a:nth-child(5):hover~.animation {
 
 .opacity0{
   opacity: 0 !important;
-}
-
-.active{
-  box-shadow: 14px 2px 20px -4px #75b9ff;
 }
