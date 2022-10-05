@@ -16,6 +16,8 @@ let form = document.querySelector(".login-box");
 let carrusel = document.querySelector(".carousel-inner");
 
 let mapa = document.querySelector(".mapa");
+let top2 = mapa.getBoundingClientRect().top;
+let top3 = form.getBoundingClientRect().top;
 
 guardar.addEventListener("click",reservarEvento);
 
@@ -30,17 +32,14 @@ function reservarEvento(){
 window.addEventListener("scroll", detectarPosibleCambio);
 
 function detectarPosibleCambio(){
-    if(window.visualViewport)
-    mapa.classList.remove("antiwidth");
-    form.classList.remove("opacity0");
+    if(window.scrollY >= top2 / 6){
+        mapa.classList.remove("antiwidth");
+    }
+
+    if(window.visualViewport.pageTop >= top3 / 2){
+        form.classList.remove("opacity0");
+    }
 }
-
-window.addEventListener("load", gatos);
-
-function gatos(){
-    carrusel.classList.remove("carousel-inner-mil")
-}
-
 
 
 function irAReservas(){
@@ -48,5 +47,8 @@ function irAReservas(){
 }
 
 function irAMap(){
-    window.scrollTo(0, 500);
+    window.scrollTo(0, top2);
 }
+
+
+
